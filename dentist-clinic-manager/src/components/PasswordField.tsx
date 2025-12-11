@@ -1,12 +1,8 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState, memo } from "react";
 
-interface PasswordFieldProps {
-  password: string;
-  onSetPassword: (password: string) => void;
-}
 
-function PasswordFieldComponent({ password, onSetPassword }: PasswordFieldProps) {
+function PasswordFieldComponent() {
   const [show, setShow] = useState(false);
 
   return (
@@ -15,8 +11,6 @@ function PasswordFieldComponent({ password, onSetPassword }: PasswordFieldProps)
         className="user-id"
         type={show ? "text" : "password"}
         placeholder="Password"
-        value={password}
-        onChange={(e) => onSetPassword(e.target.value)}
       />
 
       <div onClick={() => setShow((prev) => !prev)}>

@@ -11,14 +11,8 @@ interface PrivateLayOutProps {
 }
 
 export default function PrivateLayout({user, onSignOut} : PrivateLayOutProps) {
-  const navigate = useNavigate();
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 
-  useEffect(() => {
-    if (!user) {
-      navigate('/');
-    }
-  }, [user, navigate]);
 
   const handleToggle = () => {
     setIsCollapsed(!isCollapsed);

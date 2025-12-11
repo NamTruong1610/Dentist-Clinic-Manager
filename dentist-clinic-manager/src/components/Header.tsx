@@ -1,11 +1,8 @@
 import React from 'react'
 import './Header.css'
 
-interface HeaderProps {
-  onSignOut: () => void;
-}
 
-export default function Header({onSignOut} : HeaderProps) {
+export default function Header() {
   return (
     <>
         <div className="header-container">
@@ -15,7 +12,7 @@ export default function Header({onSignOut} : HeaderProps) {
           </div>
           <div className="profile-container">
             <div>Profile Pic</div>
-            <button type="submit" onClick={onSignOut}>Log Out</button>
+            <button type="submit">Log Out</button>
           </div>
         </div>
     </>
