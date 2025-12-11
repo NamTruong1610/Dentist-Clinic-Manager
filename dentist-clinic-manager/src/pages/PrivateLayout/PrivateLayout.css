@@ -1,0 +1,8 @@
+.private-layout-container {
+  display: flex;
+}
+
+.page-header-container {
+  flex: 1;
+  background-color: bisque;
+}

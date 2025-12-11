@@ -1,0 +1,17 @@
+.header-container {
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-noti-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.profile-container {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}

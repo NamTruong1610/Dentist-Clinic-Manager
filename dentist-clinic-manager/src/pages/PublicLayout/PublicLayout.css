@@ -1,0 +1,22 @@
+.public-layout-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(75, 111, 236, 255);
+}
+
+.public-layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 4vh;
+  padding: 5vh;
+}
+
+/* background-color: rgba(48, 111, 204, 255); */
+/* background-color: rgba(155, 154, 153, 1); */
