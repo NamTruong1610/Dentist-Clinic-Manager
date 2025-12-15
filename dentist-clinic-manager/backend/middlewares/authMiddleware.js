@@ -19,14 +19,10 @@ exports.authenticatedRoutes = async (req, res, next) => {
         req.header('Authorization')?.replace('Bearer ', '');
     }
 
-
-
     // If the token is not there
     if (!token) {
       throw new ErrorHandler('Token not found!', 401);
     }
-
-
 
     // Verify the incoming refresh token required token and secret key
     const { err, decoded } = await generateDecodedToken(token, secretKey)

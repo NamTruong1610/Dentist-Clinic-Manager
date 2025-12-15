@@ -5,11 +5,6 @@ async function findAllUsers() {
 }
 
 async function findUser({ id, email, username }, selectField = false) {
-  const query = {};
-  if (id) query._id = id;
-  if (email) query.email = email;
-  if (username) query.username = username;
-
   // Use $or operator to allow finding by id, email or username
   const userQuery = User.findOne({
     $or: [
