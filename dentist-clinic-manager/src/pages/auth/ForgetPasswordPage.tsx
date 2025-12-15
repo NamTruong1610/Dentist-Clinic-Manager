@@ -1,11 +1,11 @@
 import './AuthenticationForm.css'
 
 
-export default function ResetPasswordPage(){
+export default function ForgetPasswordPage(){
 
   return (
     <>
-      <div className='title'>Reset Password</div>
+      <div className='title'>Forget Password</div>
       <div className="email-input-container">
         <input
           className="user-id"

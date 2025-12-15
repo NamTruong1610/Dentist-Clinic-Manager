@@ -1,5 +1,6 @@
 
-import './PublicLayout.css'
+import { Outlet } from 'react-router'
+import './AuthLayout.css'
 
 export default function PublicLayout() {
 
@@ -8,8 +9,7 @@ export default function PublicLayout() {
     <>
       <div className="public-layout-page-container">
         <div className="public-layout-container">
-
-
+          <Outlet />
         </div>
       </div>
 
