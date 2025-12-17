@@ -14,6 +14,7 @@ const {
 const { validateRegistrationRules } = require("../middlewares/validationMiddleware");
 const { authenticatedRoutes, authorize } = require("../middlewares/authMiddleware");
 const router = express.Router();
+const { loginLimiter } = require("../middlewares/loginLimiter");
 
 // Get collection of users
 router.get('/users', authenticatedRoutes, authorize('admin'), getAllUsers)
@@ -24,7 +25,7 @@ router.get('/user', authenticatedRoutes, getUserByIdController)
 router.post('/signup', validateRegistrationRules, registerController)
 
 // Register API
-router.post('/login', loginController)
+router.post('/login', loginLimiter, loginController)
 
 // Email Verification API
 router.post('/mail-verification', verifyMailController)

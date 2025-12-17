@@ -220,8 +220,6 @@ exports.forgetPasswordController = async (req, res, next) => {
     // Sending Mail
     const token = await sendForgetPasswordLink(user);
 
-    console.log(token, 'cscbasb,cs');
-
     res.status(201).json({
       error: false,
       message: 'Link has been sent!',
