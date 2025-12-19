@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import AuthLayout from './pages/auth/AuthLayout.tsx'
-import { ForgetPasswordPage, LoginPage, ResetPasswordPage, SignUpPage, VerifyOTPPage } from './pages/auth/index.ts'
+import { ForgetPasswordPage, LoginPage, ResetPasswordPage, SignUpPage, VerifyOTPPage } from './pages/index.ts'
 import PrivateLayout from './Layout.tsx'
-import PageNotFound from './pages/auth/PageNotFound.tsx'
+import PageNotFound from './pages/PageNotFound.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
